@@ -1,3 +1,12 @@
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js b/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
+index 81939c9..f3447e7 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/gatsby-config.js
+@@ -38,3 +38,4 @@ module.exports = ({
+     ],
+   }
+ }
++
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js
 index 47163c2..9ed2b68 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js
@@ -76,6 +85,29 @@ index af4af7a..f296953 100644
      </main>
    )
  }
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/seo/seo.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/seo/seo.js
+index 6a04f31..5409ed5 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/seo/seo.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/seo/seo.js
+@@ -2,6 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
+ import PropTypes from "prop-types"
+ import React from "react"
+ import { Helmet } from "react-helmet"
++import favicon from '../../../../../../static/favicon.ico'
+ 
+ const SEO = props => {
+   const { site } = useStaticQuery(
+@@ -60,6 +61,10 @@ const SEO = props => {
+           content: description,
+         },
+       ].concat(meta)}
++
++      link={[
++        { rel: "icon", type: "image/x-icon", href: favicon },
++      ]}
+     />
+   )
+ }
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js
 index 2be9295..e347b8c 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js
@@ -90,7 +122,7 @@ index 2be9295..e347b8c 100644
        className="rounded-full relative z-10"
      />
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js
-index e618ae4..9c13271 100644
+index e618ae4..c72bde9 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js
 +++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js
 @@ -6,7 +6,7 @@ import SocialLinks from "../social-links/social-links"
