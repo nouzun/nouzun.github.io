@@ -1,0 +1,27 @@
+- profile:
+  initials: NOU
+  name: Necip Onur Uzun
+  email: john.doe@change.me
+  profession: Software Engineer
+  image: images/profile.jpg
+  location: Munich, Germany
+  relocation: false
+  company: Voith Digital Ventures
+  for_hire: false
+  focus: IoT & Microservices
+  focus_url: false
+  about: |
+    Hi! My name is Necip Onur Uzun. I currently work full-time as a Software Engineer.
+  skills:
+    - Software Design & Development
+    - Orchestration & Continuous Integration
+    - Microservices
+  tools:
+    - Linux
+    - C, C++, Go
+    - Bash
+  budget:
+    currency: $
+    min: 5
+    max: 30
+    default: 10
