@@ -108,19 +108,6 @@ index 6a04f31..5409ed5 100644
      />
    )
  }
-diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js
-index 2be9295..e347b8c 100644
---- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js
-+++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/profile-image.js
-@@ -6,6 +6,8 @@ const ProfileImage = ({ image, name }) => (
-   <div className="relative inline-block leading-none">
-     <Img
-       fixed={image.childImageSharp.fixed}
-+      width="200"
-+      height="200"
-       alt={name}
-       className="rounded-full relative z-10"
-     />
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js
 index e618ae4..c72bde9 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/sidebar/sidebar.js
