@@ -6,5 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    description: "Necip Onur Uzun - Software Engineer",
+    locale: "en",
+    title: "Necip Onur Uzun",
+  },
+  plugins: [
+  {
+    resolve: "@wkocjan/gatsby-theme-intro",
+    options: {
+      theme: "classic",
+    },
+  },
+],
 }
