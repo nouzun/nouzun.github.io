@@ -107,7 +107,7 @@ index e618ae4..9c13271 100644
        </div>
  
 -      <div className="pt-8 pb-12 lg:py-0">
-+      <div className="pt-8 pb-12 mt-10 lg:py-0">
++      <div className="pt-8 pb-12 mt-5 lg:py-0">
          <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
            Connect
          </h5>
