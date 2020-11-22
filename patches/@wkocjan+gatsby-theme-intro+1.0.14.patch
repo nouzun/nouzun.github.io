@@ -7,6 +7,25 @@ index 81939c9..f3447e7 100644
    }
  }
 +
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/about/about.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/about/about.js
+index c870dec..47c30e7 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/about/about.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/about/about.js
+@@ -6,8 +6,13 @@ const About = ({ about }) => (
+     <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
+       About
+     </h5>
+-    <div className="font-text text-sm pb-12 leading-normal whitespace-pre-line">
++    <div className="font-text text-sm pb-12 leading-normal">
+       {about}
++      <div className="inline-flex">
++        <svg viewBox="0 0 20 20" className="h-4 w-4">
++          <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
++        </svg>
++      </div>
+     </div>
+   </>
+ )
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js
 index 47163c2..9ed2b68 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/footer/footer.js
@@ -130,6 +149,30 @@ index e618ae4..c72bde9 100644
          <h5 className="font-header font-semibold text-front text-sm uppercase mb-3">
            Connect
          </h5>
+diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/summary/summary.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/summary/summary.js
+index 3215e22..84d55bb 100644
+--- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/summary/summary.js
++++ b/node_modules/@wkocjan/gatsby-theme-intro/src/components/summary/summary.js
+@@ -24,19 +24,6 @@ const Summary = ({ profile }) => (
+       </h5>
+       <div className="font-header font-light text-2xl text-front leading-tight">
+         {profile.focus}
+-        {profile.focus_url && (
+-          <div>
+-            <a
+-              aria-label="website"
+-              className="inline-block text-front opacity-50 hover:opacity-75 h-4 w-4 transition-opacity duration-150"
+-              href={profile.focus_url}
+-              rel="noopener noreferrer"
+-              target="_blank"
+-            >
+-              <FaCompass />
+-            </a>
+-          </div>
+-        )}
+       </div>
+     </div>
+   </div>
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/components/tools/tools.js b/node_modules/@wkocjan/gatsby-theme-intro/src/components/tools/tools.js
 index 590bd2a..5d83db7 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/components/tools/tools.js
@@ -180,10 +223,22 @@ index f9b3f12..119ba74 100644
  
          <MainContent
 diff --git a/node_modules/@wkocjan/gatsby-theme-intro/src/types/profile.js b/node_modules/@wkocjan/gatsby-theme-intro/src/types/profile.js
-index ea4a17e..56f3b4a 100644
+index ea4a17e..f06e588 100644
 --- a/node_modules/@wkocjan/gatsby-theme-intro/src/types/profile.js
 +++ b/node_modules/@wkocjan/gatsby-theme-intro/src/types/profile.js
-@@ -43,7 +43,7 @@ export const query = graphql`
+@@ -12,7 +12,6 @@ export const ProfileType = {
+   company: string.isRequired,
+   email: string.isRequired,
+   focus: string.isRequired,
+-  focus_url: string,
+   for_hire: bool.isRequired,
+   image: shape({
+     childImageSharp: object.isRequired,
+@@ -39,11 +38,10 @@ export const query = graphql`
+     company
+     email
+     focus
+-    focus_url
      for_hire
      image {
        childImageSharp {
