@@ -6,19 +6,20 @@
   image: images/profile.jpg
   location: Munich, Germany
   relocation: false
-  company: Voith Digital Ventures
+  company: Voith Digital
   for_hire: false
-  focus: IoT & Microservices
+  focus: Distributed Systems
   about: |
     Hi! My name is Necip Onur Uzun. I've studied computer science (M.Sc.) and been working full-time as a Software Engineer for 10+ years. Apart from developing software, I'm interested in jazz, swing dance, table tennis and coffee!
   skills:
-    - Software Design & Development
-    - Orchestration & Continuous Integration
-    - Microservices
+    - Microservice & API Design
+    - Open Source & Cloud Computing
+    - Orchestration & CI/CD
   tools:
-    - Linux
-    - C, C++, Go
-    - Bash
+    - Linux, Bash
+    - C++, Java, Go
+    - Docker, K8s
+    - Git
   budget:
     currency: $
     min: 5
