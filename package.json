@@ -15,14 +15,14 @@
     "postinstall": "npx patch-package"
   },
   "dependencies": {
-    "@wkocjan/gatsby-theme-intro": "^1.0.14",
-    "gatsby": "^2.24.57",
-    "gatsby-plugin-google-gtag": "^4.6.0",
+    "@wkocjan/gatsby-theme-intro": "1.0.14",
+    "gatsby": "^2.32.13",
+    "gatsby-plugin-google-gtag": "^2.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "2.1.1"
+    "prettier": "2.5.1"
   },
   "repository": {
     "type": "git",
