@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    description: "Necip Onur Uzun - Software Engineer",
+    description: "Necip Onur Uzun - Sr. Software Engineer",
     locale: "en",
     title: "Necip Onur Uzun",
   },

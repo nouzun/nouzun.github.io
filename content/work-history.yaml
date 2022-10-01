@@ -1,6 +1,11 @@
-- company: Voith Digital
+- company: IBM
+  position: Sr. Software Engineer
+  period: October 2022 - present
+  url:
+
+- company: Voith
   position: Software Engineer
-  period: November 2018 - present
+  period: November 2018 - July 2022
   url:
 
 - company: TeamViewer
