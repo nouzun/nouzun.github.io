@@ -12,12 +12,14 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "postinstall": "npx patch-package"
+    "postinstall": "npx patch-package",
+    "deploy": "npm i patch-package && npx patch-package && gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@wkocjan/gatsby-theme-intro": "1.0.14",
     "gatsby": "^2.32.13",
     "gatsby-plugin-google-gtag": "^2.8.0",
+    "patch-package": "^6.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
